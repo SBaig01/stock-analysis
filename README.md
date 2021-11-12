@@ -24,4 +24,4 @@ Before refactoring the code, the script took 0.79 seconds to execute. After refa
 - Disadvantages: It takes time to refactor code and that means increased costs for business. If you refactor a working code, you may damage it.
 
 ### How do these pros and cons apply to refactoring the original VBA script?
-
+While the original VBA script worked and returned the desired values, the running time was almost 8 times more than the refactored script. By introducing a tickerIndex we were able to call upon the appropriate 3 Arrays of Volumes, Starting Prices and Ending Prices for the All Tickers array and consecutively increase the tickerIndex. This made the script run faster as the nested For Loop would generate the output Arrays without having to start at the beginning of the initial For Loop to find the appropriate Ticker.
